@@ -1,0 +1,126 @@
+#login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login .form-box {
+  background: white;
+  padding: 30px 50px 30px 50px;
+  /* box-shadow: 0px 0px 5px gray; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login .form-box h1 {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--bg-secondary);
+}
+
+#login .form-box img {
+  width: 150px;
+}
+
+#login .form-box input {
+  width: 350px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid var(--bg-primary);
+  border-radius: 5px;
+}
+
+#login .form-box input:focus {
+  box-shadow: 0px 0px 2px var(--bg-primary);
+}
+
+#login .form-box .loginBtn {
+  background: var(--bg-primary);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 0px;
+  margin-top: 10px;
+}
+
+#login .form-box a {
+  text-decoration: none;
+  color: var(--bg-secondary);
+  font-size: 15px;
+}
+
+#login .authBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#login .authBtn button {
+  background: var(--bg-secondary);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+#login .authBtn button p {
+  font-size: 12px;
+  margin: 0;
+  margin-left: 2px;
+}
+
+#login .last {
+  color: var(--bg-secondary);
+}
+
+#login .last a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.inputField {
+  position: relative;
+}
+
+#password-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  #login .form-box {
+    padding: 0px 10px 30px 10px;
+  }
+  #login .authBtn {
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #login .form-box {
+    justify-content: center;
+  }
+  #login .form-box .signupBtn {
+    width: 300px;
+  }
+  #login .form-box input {
+    width: 300px;
+  }
+}

@@ -1,0 +1,50 @@
+#home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#home table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#home table th {
+  background-color: rgb(226, 226, 226);
+  padding: 15px 50px 10px 20px;
+}
+
+#home table td {
+  padding: 10px 50px 10px 20px;
+}
+
+#home table td button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--bg-primary);
+}
+
+#home table td button:hover {
+  color: var(--bg-secondary);
+}
+
+.updateBtn {
+  background: var(--bg-primary);
+  border: 1px solid var(--bg-primary);
+  outline: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  transition: 0.5s;
+}
+
+.updateBtn:hover {
+  background: none;
+  color: var(--bg-primary);
+}

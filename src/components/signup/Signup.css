@@ -1,0 +1,143 @@
+#signup {
+  width: 100%;
+  height: 100vh;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup .form-box {
+  background: white;
+  padding: 30px 50px 30px 50px;
+  /* box-shadow: 0px 0px 5px gray; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup .form-box h1 {
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--bg-secondary);
+}
+
+#signup .form-box img {
+  width: 150px;
+}
+
+#signup .form-box input {
+  width: 350px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid var(--bg-primary);
+  border-radius: 5px;
+}
+
+#signup .form-box input:focus {
+  box-shadow: 0px 0px 2px var(--bg-primary);
+}
+
+#signup .form-box .signupBtn {
+  background: var(--bg-primary);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 0px;
+  margin-top: 15px;
+}
+
+#signup .authBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#signup .authBtn button {
+  background: var(--bg-secondary);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+#signup .authBtn button p {
+  font-size: 12px;
+  margin: 0;
+  margin-left: 2px;
+}
+
+#signup .last {
+  color: var(--bg-secondary);
+}
+
+#signup .last a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--bg-secondary);
+  font-size: 15px;
+}
+
+#signup .form-box .termsInput {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+#signup .form-box .termsInput input {
+  width: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#signup .form-box .termsInput input:focus {
+  box-shadow: none;
+}
+
+#signup .form-box span {
+  font-size: 12px;
+  color: var(--bg-secondary);
+  margin-left: 5px;
+}
+
+#signup .form-box span a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+  #signup .form-box {
+    padding: 0px 10px 30px 10px;
+  }
+
+  #signup .authBtn {
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #signup .form-box {
+    justify-content: center;
+  }
+  #signup .form-box .signupBtn {
+    width: 300px;
+  }
+  #signup .form-box input {
+    width: 300px;
+  }
+  #signup .form-box .termsInput {
+    width: 300px;
+  }
+}
